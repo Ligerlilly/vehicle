@@ -8,16 +8,12 @@ describe Vehicle do
   end
   describe '#make' do
     it 'returns the make of the vehicle' do
-
-      #test_vehicle.save
       expect(@test_vehicle.make).to eq "Toyota"
     end
   end
   describe '#model' do
     it 'returns the model of the vehicle' do
-      #test_vehicle.save
       expect(@test_vehicle.model).to eq "Prius"
-
     end
   end
 
@@ -37,6 +33,12 @@ describe Vehicle do
   describe '#year' do
     it 'returns the year of the vehicle' do
       expect(@test_vehicle.year).to eq 2000
+    end
+  end
+
+  describe '#age' do
+    it 'returns the vehicle age' do
+      expect(@test_vehicle.age()).to(eq(15))
     end
   end
 end
